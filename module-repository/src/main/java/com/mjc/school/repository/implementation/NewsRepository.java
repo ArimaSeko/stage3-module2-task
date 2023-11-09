@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.stereotype.Repository;
 
+import javax.xml.crypto.Data;
 import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
@@ -14,7 +15,7 @@ import java.util.List;
 @Repository
 public class NewsRepository implements BaseRepository<NewsModel, Long>  {
     @Qualifier("dataSource")
-    public final DataSource dataSource;
+    public DataSource dataSource;
     public NewsRepository(DataSource dataSource){
         this.dataSource = dataSource;
     }

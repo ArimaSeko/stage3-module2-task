@@ -26,7 +26,6 @@ public class NewsService implements BaseService<NewsDtoRequest, NewsDtoResponse,
     @Qualifier("newsValidator")
     private final NewsValidator newsValidator;
     private ModelMapper mapper = Mappers.getMapper(ModelMapper.class);
-
     public NewsService(NewsRepository newsRepository, NewsValidator newsValidator) {
         this.newsRepository = newsRepository;
         this.newsValidator = newsValidator;

@@ -10,11 +10,11 @@ import static com.mjc.school.repository.model.data.AuthorData.getAuthorData;
 import static com.mjc.school.repository.model.data.NewsData.getNewsData;
 @Component
 public class DataSource {
-    private final List<NewsModel> news;
-    private final List<AuthorModel> authors;
+    private final List<NewsModel> newsData;
+    private final List<AuthorModel> authorData;
     private DataSource() {
-        authors = getAuthorData().getAuthorList();
-        news = getNewsData(authors).getNewsList();
+        authorData = getAuthorData().getAuthorList();
+        newsData = getNewsData(authorData).getNewsList();
     }
 
     public static DataSource getInstance() {
@@ -22,9 +22,9 @@ public class DataSource {
     }
 
     public List<NewsModel> getNews() {
-        return news;
+        return newsData;
     }
-    public List<AuthorModel> getAuthors(){ return authors;}
+    public List<AuthorModel> getAuthors(){ return authorData;}
     private static class LazyDataSource {
         static final DataSource INSTANCE = new DataSource();
     }

@@ -14,12 +14,11 @@ import java.util.List;
 @Repository
 public class AuthorRepository implements BaseRepository <AuthorModel, Long> {
     @Qualifier("dataSource")
-    public final DataSource dataSource;
+    public  DataSource dataSource;
 
     public AuthorRepository(DataSource dataSource) {
         this.dataSource = dataSource;
     }
-
     @Override
     public List<AuthorModel> readAll() {
         return dataSource.getAuthors();
