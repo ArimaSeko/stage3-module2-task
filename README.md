@@ -86,7 +86,7 @@ implementing all validations in business logic code or declaratively, e.g. via c
 > To support your custom annotations and perform validation outside of business logic code you can use
 > e.g. [Aspects][1].
 
-#### Module Main
+#### Module com.mjc.school.Main
 
 - Use Command pattern to call operations
 - Instead of direct call module-web from module-main organize communication between module-web and module-main by custom

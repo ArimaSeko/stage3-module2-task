@@ -1,3 +1,5 @@
 dependencies {
     implementation project(':module-service')
+    implementation project(path: ':module-repository')
+    implementation 'org.projectlombok:lombok:1.18.26'
 }

@@ -9,7 +9,7 @@ public interface BaseRepository<T extends BaseEntity<K>, K> {
 
     List<T> readAll();
 
-    Optional<T> readById(K id);
+    T readById(K id);
 
     T create(T entity);
 
