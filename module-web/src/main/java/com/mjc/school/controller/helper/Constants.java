@@ -1,8 +1,6 @@
-package com.mjc.school.helper;
+package com.mjc.school.controller.helper;
 
-
-public class Constant {
-
+public class Constants {
     public static final String NEWS_ID = "News Id";
     public static final String AUTHOR_ID = "Author Id";
     public static final String NUMBER_OPERATION_ENTER = "Enter the number of operation:";
@@ -12,6 +10,4 @@ public class Constant {
     public static final String AUTHOR_ID_ENTER = "Enter author id:";
     public static final String COMMAND_NOT_FOUND = "Command not found.";
     public static final String OPERATION = "Operation: ";
-
-    private Constant() {}
 }

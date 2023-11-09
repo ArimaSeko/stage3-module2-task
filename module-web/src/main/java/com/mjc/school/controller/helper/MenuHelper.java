@@ -1,4 +1,4 @@
-package com.mjc.school.helper;
+package com.mjc.school.controller.helper;
 
 
 import com.mjc.school.controller.implementation.NewsController;
@@ -9,8 +9,9 @@ import org.springframework.stereotype.Component;
 
 import java.util.Scanner;
 
-import static com.mjc.school.helper.Constant.*;
-import static com.mjc.school.helper.Operations.*;
+import static com.mjc.school.controller.helper.Constants.*;
+import static com.mjc.school.controller.helper.Operations.*;
+
 @Component("helper")
 public class MenuHelper {
 
@@ -95,3 +96,4 @@ public class MenuHelper {
         return enter;
     }
 }
+

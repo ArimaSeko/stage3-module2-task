@@ -1,12 +1,10 @@
 package com.mjc.school.controller.implementation;
 
 import com.mjc.school.controller.BaseController;
-import com.mjc.school.repository.model.NewsModel;
 import com.mjc.school.service.BaseService;
 import com.mjc.school.service.dto.NewsDtoRequest;
 import com.mjc.school.service.dto.NewsDtoResponse;
 import com.mjc.school.service.implementation.NewsService;
-import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
@@ -15,7 +13,7 @@ import java.util.List;
 
 @Controller
 @Component
-public class NewsController implements BaseController <NewsDtoRequest, NewsDtoResponse, Long> {
+public class NewsController implements BaseController<NewsDtoRequest, NewsDtoResponse, Long> {
     @Qualifier("newsService")
     private final BaseService<NewsDtoRequest, NewsDtoResponse, Long> newsService;
 

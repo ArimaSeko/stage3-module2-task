@@ -1,14 +1,13 @@
 package com.mjc.school;
 
+import com.mjc.school.controller.helper.MenuHelper;
 import com.mjc.school.controller.implementation.NewsController;
-import com.mjc.school.helper.MenuHelper;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.annotation.PropertySource;
 
 import java.util.Scanner;
 
-import static com.mjc.school.helper.Constant.COMMAND_NOT_FOUND;
+import static com.mjc.school.controller.helper.Constants.*;
 public class Main {
     public static void main(String[] args) {
         ApplicationContext ctx = new AnnotationConfigApplicationContext("com.mjc.school");
