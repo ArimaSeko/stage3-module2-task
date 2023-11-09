@@ -2,18 +2,18 @@ package com.mjc.school.repository.model;
 
 import java.util.Objects;
 
-public class AuthorModel {
+public class AuthorModel implements BaseEntity<Long> {
     private Long id;
     private String name;
     public AuthorModel(Long id, String name) {
         this.id = id;
         this.name = name;
     }
-
+    @Override
     public Long getId() {
         return id;
     }
-
+    @Override
     public void setId(Long id) {
         this.id = id;
     }
